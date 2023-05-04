@@ -17,12 +17,21 @@
   </selection>
 
   <grid name="product-grid" title="Products" model="com.axelor.sale.db.Product">
+    <toolbar>
+      <button name="printCatalog" onClick="print.products" icon="fa-print" title="Print catalog"/>
+    </toolbar>
     <field name="name" />
     <field name="category" />
     <field name="price" />
     <field name="color" widget="SingleSelect"/>
     <field name="attrs"/>
   </grid>
+
+  <action-report name="print.products"
+                 design="products.rptdesign"
+                 output="products-${date}${time}"
+                 format="pdf">
+  </action-report>
 
   <form name="product-form" title="Product" model="com.axelor.sale.db.Product"
     onLoad="com.axelor.sale.web.ProductController:fetchTotalSales">
