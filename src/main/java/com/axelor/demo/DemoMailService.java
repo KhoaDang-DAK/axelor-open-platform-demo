@@ -32,8 +32,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.inject.Singleton;
-import javax.mail.internet.InternetAddress;
+import jakarta.inject.Singleton;
+import jakarta.mail.internet.InternetAddress;
 
 @Singleton
 public class DemoMailService extends MailServiceImpl {

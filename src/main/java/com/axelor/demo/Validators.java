@@ -23,8 +23,8 @@ import com.axelor.sale.db.Order;
 import com.axelor.sale.service.SaleOrderService;
 import java.lang.invoke.MethodHandles;
 import java.util.Map;
-import javax.inject.Inject;
-import javax.validation.ValidationException;
+import jakarta.inject.Inject;
+import jakarta.validation.ValidationException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

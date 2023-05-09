@@ -24,7 +24,7 @@ import com.axelor.sale.db.OrderLine;
 import com.axelor.sale.db.Tax;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import javax.validation.ValidationException;
+import jakarta.validation.ValidationException;
 
 public class SaleOrderService {
 

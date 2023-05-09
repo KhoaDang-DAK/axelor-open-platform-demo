@@ -28,8 +28,8 @@ import com.axelor.events.PreLogin;
 import com.axelor.events.PreRequest;
 import com.axelor.events.RequestEvent;
 import com.axelor.events.qualifiers.EntityType;
-import javax.inject.Inject;
-import javax.inject.Named;
+import jakarta.inject.Inject;
+import jakarta.inject.Named;
 import org.slf4j.Logger;
 
 public class DemoEventLogger {

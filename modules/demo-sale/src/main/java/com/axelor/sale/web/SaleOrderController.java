@@ -34,9 +34,9 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import javax.inject.Inject;
-import javax.persistence.EntityManager;
-import javax.persistence.Query;
+import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 
 public class SaleOrderController extends JpaSupport {
 

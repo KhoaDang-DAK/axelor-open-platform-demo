@@ -34,7 +34,7 @@ import com.google.common.base.Joiner;
 import com.google.inject.persist.Transactional;
 import java.util.Arrays;
 import java.util.List;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

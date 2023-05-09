@@ -24,7 +24,7 @@ import com.axelor.contact.db.Contact;
 import com.axelor.contact.service.HelloService;
 import com.axelor.test.GuiceExtension;
 import com.axelor.test.GuiceModules;
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 

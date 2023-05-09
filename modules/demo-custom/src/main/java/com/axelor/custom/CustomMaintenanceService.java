@@ -21,7 +21,7 @@ package com.axelor.custom;
 import com.axelor.auth.AuthUtils;
 import com.axelor.auth.db.User;
 import com.axelor.web.service.MaintenanceService;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 public class CustomMaintenanceService implements MaintenanceService {
 

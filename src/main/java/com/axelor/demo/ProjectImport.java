@@ -23,9 +23,9 @@ import com.axelor.common.StringUtils;
 import com.axelor.project.db.ProjectTask;
 import com.axelor.project.db.repo.ProjectTaskRepository;
 import com.google.inject.persist.Transactional;
+import jakarta.inject.Inject;
 import java.util.Arrays;
 import java.util.Map;
-import javax.inject.Inject;
 
 public class ProjectImport {
 
