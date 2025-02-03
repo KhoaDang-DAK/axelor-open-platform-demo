@@ -21,10 +21,10 @@ package com.axelor.demo;
 import com.axelor.db.JpaSequence;
 import com.axelor.sale.db.Order;
 import com.axelor.sale.service.SaleOrderService;
-import java.lang.invoke.MethodHandles;
-import java.util.Map;
 import jakarta.inject.Inject;
 import jakarta.validation.ValidationException;
+import java.lang.invoke.MethodHandles;
+import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

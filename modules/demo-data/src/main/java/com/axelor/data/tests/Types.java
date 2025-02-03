@@ -20,13 +20,13 @@ package com.axelor.data.tests;
 
 import com.axelor.db.JpaModel;
 import com.google.common.base.MoreObjects;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZonedDateTime;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "DATA_TYPES")

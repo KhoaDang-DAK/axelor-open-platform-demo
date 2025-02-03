@@ -22,9 +22,9 @@ import com.axelor.common.ObjectUtils;
 import com.axelor.sale.db.Order;
 import com.axelor.sale.db.OrderLine;
 import com.axelor.sale.db.Tax;
+import jakarta.validation.ValidationException;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import jakarta.validation.ValidationException;
 
 public class SaleOrderService {
 

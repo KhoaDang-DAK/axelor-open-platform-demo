@@ -28,15 +28,15 @@ import com.axelor.sale.db.Order;
 import com.axelor.sale.db.OrderStatus;
 import com.axelor.sale.service.SaleOrderService;
 import com.google.common.collect.Lists;
+import jakarta.inject.Inject;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.Query;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import jakarta.inject.Inject;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
 
 public class SaleOrderController extends JpaSupport {
 

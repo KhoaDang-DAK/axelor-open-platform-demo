@@ -27,13 +27,13 @@ import com.axelor.db.Query;
 import com.axelor.inject.Beans;
 import com.axelor.mail.service.MailServiceImpl;
 import com.google.common.base.Joiner;
+import jakarta.inject.Singleton;
+import jakarta.mail.internet.InternetAddress;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import jakarta.inject.Singleton;
-import jakarta.mail.internet.InternetAddress;
 
 @Singleton
 public class DemoMailService extends MailServiceImpl {
