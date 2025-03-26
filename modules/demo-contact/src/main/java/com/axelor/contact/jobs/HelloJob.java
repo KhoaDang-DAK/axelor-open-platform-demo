@@ -18,12 +18,13 @@
  */
 package com.axelor.contact.jobs;
 
+import com.axelor.common.ObjectUtils;
 import org.quartz.Job;
 import org.quartz.JobDataMap;
 import org.quartz.JobDetail;
 import org.quartz.JobExecutionContext;
 
-/** An example {@link Job} class that prints a some messages to the stderr. */
+/** An example {@link Job} class that prints some messages to the stderr. */
 public class HelloJob implements Job {
 
   @Override
@@ -34,11 +35,13 @@ public class HelloJob implements Job {
     String name = detail.getKey().getName();
     String desc = detail.getDescription();
 
-    System.err.println("Job fired: " + name + " (" + desc + ")");
-    if (data != null && !data.isEmpty()) {
+    StringBuilder sb = new StringBuilder("Job fired: %s (%s)".formatted(name, desc));
+    if (ObjectUtils.notEmpty(data)) {
       for (String key : data.keySet()) {
-        System.err.println("    " + key + " = " + data.getString(key));
+        sb.append("%n    %s = %s".formatted(key, data.getString(key)));
       }
     }
+
+    System.err.println(sb.toString());
   }
 }
