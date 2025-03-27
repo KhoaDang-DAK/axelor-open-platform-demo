@@ -21,13 +21,13 @@ package com.axelor.project.util;
 import com.axelor.common.ObjectUtils;
 import com.axelor.db.Model;
 import com.axelor.db.mapper.Mapper;
+import jakarta.annotation.Nullable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import javax.annotation.Nullable;
 
 public class TreeGridUtils {
 
