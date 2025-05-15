@@ -3,7 +3,7 @@ buildscript {
     gradlePluginPortal()
   }
   dependencies {
-    classpath "com.diffplug.spotless:spotless-plugin-gradle:6.25.0"
+    classpath "com.diffplug.spotless:spotless-plugin-gradle:7.0.3"
   }
 }
 
@@ -32,13 +32,13 @@ allprojects { p ->
         exclude 'src/**/webapp/lib/*'
         exclude 'modules/**'
       }
-      indentWithSpaces(2)
+      leadingTabsToSpaces(2)
       trimTrailingWhitespace()
       endWithNewline()
     }
     format 'markdown', {
       target '**/*.md'
-      indentWithSpaces(2)
+      leadingTabsToSpaces(2)
       endWithNewline()
     }
     java {
