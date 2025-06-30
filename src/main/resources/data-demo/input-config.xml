@@ -259,9 +259,8 @@
     <bind column="message" to="message" />
   </input>
 
-  <input file="meta_filters.csv" type="com.axelor.meta.db.MetaFilter" search="self.filterView = :filterView AND self.name = :name">
+  <input file="meta_filters.csv" type="com.axelor.meta.db.MetaFilter" search="self.filterView = :filterView AND self.title = :title">
     <bind column="filterView" to="filterView"/>
-    <bind column="name" to="name" />
     <bind column="title" to="title" />
     <bind column="filterCustom" to="filterCustom" />
     <bind column="shared" to="shared" />
