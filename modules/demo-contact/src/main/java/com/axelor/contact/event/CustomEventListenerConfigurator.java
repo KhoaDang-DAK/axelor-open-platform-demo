@@ -16,21 +16,20 @@
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-package com.axelor.contact;
+package com.axelor.contact.event;
 
-import com.axelor.app.AxelorModule;
-import com.axelor.contact.event.CustomEventListenerConfigurator;
-import com.axelor.contact.service.AccessContactQuickMenu;
-import com.axelor.contact.service.HelloService;
-import com.axelor.contact.service.HelloServiceImpl;
+import com.axelor.db.audit.HibernateListenerConfigurator;
+import org.hibernate.event.service.spi.EventListenerRegistry;
+import org.hibernate.event.spi.EventType;
 
-public class ContactModule extends AxelorModule {
+public class CustomEventListenerConfigurator implements HibernateListenerConfigurator {
 
   @Override
-  protected void configure() {
-    bind(HelloService.class).to(HelloServiceImpl.class);
-
-    addHibernateListenerConfigurator(CustomEventListenerConfigurator.class);
-    addQuickMenu(AccessContactQuickMenu.class);
+  public void registerListeners(EventListenerRegistry registry) {
+    final LogEventListener contactEventListener = new LogEventListener();
+    registry.appendListeners(EventType.PRE_INSERT, contactEventListener);
+    registry.appendListeners(EventType.PRE_UPDATE, contactEventListener);
+    registry.appendListeners(EventType.PRE_DELETE, contactEventListener);
+    registry.appendListeners(EventType.POST_UPDATE, contactEventListener);
   }
 }

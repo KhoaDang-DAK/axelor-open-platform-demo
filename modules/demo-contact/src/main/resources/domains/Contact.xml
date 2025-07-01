@@ -43,6 +43,8 @@
 
     <finder-method name="findByName" using="fullName" />
     <finder-method name="findByEmail" using="String:email" filter="self.emails[].email = :email" />
+
+    <entity-listener class="com.axelor.contact.event.ContactListener"/>
   </entity>
 
 </domain-models>
