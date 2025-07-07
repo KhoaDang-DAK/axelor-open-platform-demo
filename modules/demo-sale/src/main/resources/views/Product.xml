@@ -18,7 +18,7 @@
 
   <grid name="product-grid" title="Products" model="com.axelor.sale.db.Product">
     <toolbar>
-      <button name="printCatalog" onClick="print.products" icon="fa-print" title="Print catalog"/>
+      <button name="printCatalog" onClick="print.products" icon="printer" title="Print catalog"/>
     </toolbar>
     <field name="name" />
     <field name="category" />
