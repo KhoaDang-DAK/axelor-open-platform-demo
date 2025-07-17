@@ -172,7 +172,9 @@
     </dataset>
     <template>
     <![CDATA[
-    <report-box label='Pending tasks' value='first.total'/>
+    <>
+      <ReportBox label='Pending tasks' value='first.total'/>
+    </>
     ]]>
     </template>
   </custom>
