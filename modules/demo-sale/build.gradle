@@ -1,11 +1,11 @@
 plugins {
-  id 'com.axelor.app'
+	id 'com.axelor.app'
 }
 
 axelor {
-  title = "Axelor :: Sale"
+	title = "Axelor :: Sale"
 }
 
 dependencies {
-  api project(':modules:demo-contact')
+	api project(':modules:demo-contact')
 }

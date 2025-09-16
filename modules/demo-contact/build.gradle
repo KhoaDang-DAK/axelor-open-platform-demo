@@ -1,7 +1,7 @@
 plugins {
-  id 'com.axelor.app'
+	id 'com.axelor.app'
 }
 
 axelor {
-  title = "Axelor :: Contact"
+	title = "Axelor :: Contact"
 }
