@@ -1,11 +1,11 @@
 plugins {
-	id 'com.axelor.app'
+  id 'com.axelor.app'
 }
 
 axelor {
-	title = "Axelor :: Custom"
+  title = "Axelor :: Custom"
 
-	description = """\
+  description = """\
 Customization module demo.
 
 This is a demo module to provide quick demonstration of customization modules.
@@ -13,6 +13,6 @@ This is a demo module to provide quick demonstration of customization modules.
 }
 
 dependencies {
-	api project(":modules:demo-contact")
-	api project(":modules:demo-sale")
+  api project(":modules:demo-contact")
+  api project(":modules:demo-sale")
 }

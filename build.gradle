@@ -1,44 +1,44 @@
 plugins {
-	id 'com.axelor.app'
+  id 'com.axelor.app'
 }
 
 axelor {
-	title = 'Axelor :: DEMO'
+  title = 'Axelor :: DEMO'
 }
 
 allprojects {
-	apply plugin: 'idea'
-	apply plugin: 'eclipse'
+  apply plugin: 'idea'
+  apply plugin: 'eclipse'
 
-	group = 'com.axelor'
-	version = '8.0.0'
+  group = 'com.axelor'
+  version = '8.0.0'
 
-	java {
-		toolchain {
-			languageVersion = JavaLanguageVersion.of(21)
-		}
-	}
+  java {
+    toolchain {
+      languageVersion = JavaLanguageVersion.of(21)
+    }
+  }
 
-	afterEvaluate {
-		test {
-			useJUnitPlatform()
-			beforeTest { descriptor ->
-				logger.lifecycle('Running: ' + descriptor)
-			}
-		}
-	}
+  afterEvaluate {
+    test {
+      useJUnitPlatform()
+      beforeTest { descriptor ->
+        logger.lifecycle('Running: ' + descriptor)
+      }
+    }
+  }
 }
 
 dependencies {
-	// add module dependencies
-	implementation project(':modules:demo-contact')
-	implementation project(':modules:demo-sale')
-	implementation project(':modules:demo-project')
-	implementation project(':modules:demo-custom')
+  // add module dependencies
+  implementation project(':modules:demo-contact')
+  implementation project(':modules:demo-sale')
+  implementation project(':modules:demo-project')
+  implementation project(':modules:demo-custom')
 }
 
 war {
-	archiveFileName = 'open-platform-demo.war'
+  archiveFileName = 'open-platform-demo.war'
 }
 
 apply from: 'gradle/style.gradle'
