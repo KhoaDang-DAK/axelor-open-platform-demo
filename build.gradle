@@ -13,6 +13,16 @@ allprojects {
   group = 'com.axelor'
   version = '8.0.0'
 
+  repositories {
+    mavenCentral()
+    maven {
+      url "https://repository.axelor.com/nexus/repository/maven-public/"
+    }
+    maven {
+      url "https://repository.axelor.com/nexus/repository/maven-snapshots/"
+    }
+  }
+
   java {
     toolchain {
       languageVersion = JavaLanguageVersion.of(21)
@@ -35,6 +45,7 @@ dependencies {
   implementation project(':modules:demo-sale')
   implementation project(':modules:demo-project')
   implementation project(':modules:demo-custom')
+  implementation 'com.axelor.addons:axelor-studio:4.+'
 }
 
 war {
